@@ -10,6 +10,8 @@ app.use(bodyParser.json({ limit : '32mb',extended : true}))
 app.use(bodyParser.urlencoded({ limit : '32mb',extended : true}))
 
 // this middelwere is used to connect serveur and client like react that uses node.js on client side 
+
+// the upper statement is wrong need more documantation about cors  
 app.use(cors())
 
 app.use("/stories", storyRouter)

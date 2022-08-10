@@ -1,14 +1,19 @@
 import StoryForm from "../StoryForm"
 import StoryList from "../StoryList"
-import Layout, { Content } from "antd/lib/layout/layout"
-import Sider from "antd/lib/layout/Sider"
+
+// antd is a UI library 
+import { Layout } from "antd"
+import styles from "./styles"
+
+const {Sider , Content } = Layout
+
 function Home(){
     return(
         <Layout>
-            <Sider width={400}>
+            <Sider style={styles.sider} width={400}>
                 <StoryForm />
             </Sider>
-            <Content>
+            <Content style={styles.content}>
                 <StoryList />
             </Content>
         </Layout>

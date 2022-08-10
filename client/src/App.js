@@ -2,20 +2,24 @@ import React from "react";
 import { Layout, Image, Typography } from "antd"
 import Logo from "./images/logo.png"
 import Home from "./compenents/Home";
+import styles from "./styles";
+
 
 const { Title } = Typography
 const { Header , Footer } = Layout
+
+
 function App() {
   return (
     <>
-    <Layout>
-      <Header>
-        <Image width="45" preview="false" src={Logo} />
+    <Layout style={styles.Layout}>
+      <Header style={styles.header}>
+        <Image style={styles.image} width="45" preview="false" src={Logo} />
         &nbsp;
-          <Title>social media</Title>
+          <Title style={styles.title}>social</Title>
       </Header>
       <Home/>
-      <Footer>2022 social media</Footer>
+      <Footer style={styles.footer}>2022 social media</Footer>
     </Layout>
     </>
   );
