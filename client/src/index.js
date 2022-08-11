@@ -13,6 +13,7 @@ import { legacy_createStore as createStore} from 'redux'
 import reducers from './reducers';
 
 //Redux Thunk middleware allows you to write action creators that return a function instead of an action. The thunk can be used to delay the dispatch of an action
+// basically it allows to use async/await on action function
 import thunk from 'redux-thunk'
 
 const store = createStore(reducers, compose(applyMiddleware(thunk)))
