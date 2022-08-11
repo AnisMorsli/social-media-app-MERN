@@ -16,7 +16,7 @@ app.use(cors())
 
 app.use("/stories", storyRouter)
 //database connexion
-const Mongo_URI = "mongodb+srv://anis:admin@cluster0.8qgzd.mongodb.net/?retryWrites=true&w=majority"
+const Mongo_URI = "mongodb+srv://.@cluster0.8qgzd.mongodb.net/?retryWrites=true&w=majority"
 const port = process.env.port || 3001
 
 const connectDB =async () =>{
